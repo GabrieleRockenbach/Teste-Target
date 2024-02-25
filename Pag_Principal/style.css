@@ -1,0 +1,128 @@
+:root {
+    --font: #305943;
+    --highlight: #3e8d87;
+    --button-color: #fbfffe;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto" , sans-serif;
+    font-weight: 500;
+    color: var(--font);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/Pag_Principal/assets/noise.svg);
+    
+}
+.introduction-container{
+    height: 100vh;
+    display: flex;
+    padding: 6rem;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+    gap: 3rem;
+}
+h1{
+    font-weight: 900;
+    font-size: 32px;
+}
+span{
+    font-weight: 900;
+    color: var(--highlight);
+}
+.avatar-image{
+    height: 300px;
+    border-radius: 50%;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    gap: 2rem;
+}
+#introduction-button {
+    width: 190px;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    color: var(--button-color);
+    background-color: var(--highlight);
+    border-radius: 8px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 1s;
+}
+#introduction-button:hover {
+    background-color: var(--font);
+}
+#introduction-button:active {
+    transform: scale(0.9);
+}
+a{
+    width: fit-content;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+.links h2{
+    font-weight: 900;
+    font-size: 32px;
+    background-color: var(--highlight);
+    color: var(--button-color);
+    padding: 30px 25px;
+    border-radius: 12px;
+}
+#cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 70px;
+    column-gap: 120px;
+    margin-top: 55px;
+}
+#cards-container div  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+#cards-container div div {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 300px;
+}
+#cards-container div img {
+    width: 300px;
+    height: 200px;
+    border-radius: 12px;
+}
+#cards-container div h2 {
+    font-size: 18px;
+    text-align: center;
+    color: var(--button-color);
+    background-color: var(--highlight);
+    padding: 10px 15px;
+    border-radius: 12px;
+    width: 300px;
+    font-weight: 500;
+}
+#cards-container div div a {
+    background-color: var(--highlight);
+    padding: 10px 15px;
+    color: var(--button-color);
+    border-radius: 12px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
