@@ -13,14 +13,19 @@ const calcFibonacciNumber = number => {
         secondFibonacciNumber = fibonacciNumber;
     }
     return (number === fibonacciNumber) ? 
-        `O número ${number} faz parte da sequência Fibonacci!` 
-        : `O número ${number} não faz parte da sequência Fibonacci!`;
+        `O número ${number} FAZ parte da sequência Fibonacci!` 
+        : `O número ${number} NÃO FAZ parte da sequência Fibonacci!`;
 }
 
 button.addEventListener('click', () => {
     const userInput = parseInt(input.value);
     const userResult = calcFibonacciNumber(userInput);
-    result.innerText = userResult;
-    input.value = "";
+    if (!isNaN(userInput)){
+        result.innerText = userResult;
+        input.value = "";
+    }
+    else{
+        result.innerText = 'Por favor, digite um número antes de enviar'
+    }
 });
 

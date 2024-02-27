@@ -11,8 +11,8 @@ function reverseString(string) {
 }
 
 function showResult(){
-   const finalResult = input.value != "" ?
-   result.innerText = 'Sua palavra ao contrário é: ' + reverseString(input.value)
+   const finalResult = input.value.trim() !== "" ?
+   result.innerText = `Sua palavra ${(input.value).toUpperCase()} ao contrário é:\n${reverseString((input.value).toUpperCase())}`
    : result.innerText = 'Por favor, digite uma palavra no campo abaixo!'
   return finalResult;
 }
