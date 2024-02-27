@@ -1,124 +1,125 @@
 :root {
-    --font: #fff;
-    --highlight: #bddce9a4;
-    --background-text-color: #253545;
-    --border: #0c8fc4;
+	--font: #fff;
+	--highlight: #bddce9a4;
+	--background-text-color: #253545;
+	--border: #0c8fc4;
 }
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: "Roboto" , sans-serif;
-    font-weight: 500;
-    color: var(--font);
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	color: var(--font);
 }
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 100px;
-    height: 100vh;
-    background-image: url(/assets/noise.svg);
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 100px;
+	height: 100vh;
+	background-image: url(/assets/noise.svg);
 }
-img{
-    height: 700px;
-    width: 500px;
-    border-radius: 12px 0 0 12px;
+img {
+	height: 700px;
+	width: 500px;
+	border-radius: 12px 0 0 12px;
 }
-div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color:var(--highlight);
-    height: 700px;
-    min-width: 500px;
-    max-width: 500px;
-    padding: 50px;
-    gap: 15px;
-    text-align: center;
-    border-radius: 0 12px 12px 0;
+div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--highlight);
+	height: 700px;
+	min-width: 500px;
+	max-width: 500px;
+	padding: 50px;
+	gap: 15px;
+	text-align: center;
+	border-radius: 0 12px 12px 0;
 }
-h1{    
-    font-size: 1.5rem;
-    background-color: var(--background-text-color);
-    border: none;
-    border-radius: 12px;
-    padding: 30px 20px;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-    cursor: default;
+h1 {
+	font-size: 1.5rem;
+	background-color: var(--background-text-color);
+	border: none;
+	border-radius: 12px;
+	padding: 30px 20px;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+	cursor: default;
 }
-table{
-    background-color: var(--background-text-color);
-    border-radius: 12px;
-    border-collapse: collapse;
-    width: 300px;
+table {
+	background-color: var(--background-text-color);
+	border-radius: 12px;
+	border-collapse: collapse;
+	width: 300px;
 }
 table tr:nth-child(odd) {
-    background-color: #575e6e;
+	background-color: #575e6e;
 }
-td , th{
-    padding: 20px 20px;
+td,
+th {
+	padding: 20px 20px;
 }
-th{
-    background-color: var(--background-text-color);
+th {
+	background-color: var(--background-text-color);
 }
 table tr:first-child th:first-child {
-    border-top-left-radius: 12px;
+	border-top-left-radius: 12px;
 }
 table tr:first-child th:last-child {
-    border-top-right-radius: 12px;
+	border-top-right-radius: 12px;
 }
 table tr:last-child td:first-child {
-    border-bottom-left-radius: 12px;
+	border-bottom-left-radius: 12px;
 }
 table tr:last-child td:last-child {
-    border-bottom-right-radius: 12px;
+	border-bottom-right-radius: 12px;
 }
-#button{
-    font-size: 1rem;
-    width: 200px;
-    background-color: var(--background-text-color);
-    border: 3px solid var(--border);
-    border-radius: 12px;
-    padding: 15px 0px;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: all 0.6s;
+#button {
+	font-size: 1rem;
+	width: 200px;
+	background-color: var(--background-text-color);
+	border: 3px solid var(--border);
+	border-radius: 12px;
+	padding: 15px 0px;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: all 0.6s;
 }
-#button:active{
-    transform: scale(0.9);
+#button:active {
+	transform: scale(0.9);
 }
-#button:focus{
-    outline: orange solid 4px;
-    border: none;
+#button:focus {
+	outline: orange solid 4px;
+	border: none;
 }
 @media screen and (max-width: 1200px) {
-    img{
-        display: none;
-    }
-    div{
-        width: 100vw;
-        height: 100vh;
-        border-radius: 0;
-        min-width: auto;
-        max-width:none;
-    }
-    #button{
-        width: 150px;
-        font-size: 1rem;
-        padding: 15px 0px;
-    }
-    h1{
-        width: 300px;
-        font-size: 1rem;
-    }
-    body{
-        background-image: url(./assets/percentage.jpg);
-        background-size: cover;
-        width: 100vw;
-        height: 100vh;
-        padding: 50px 0px;
-    }
+	img {
+		display: none;
+	}
+	div {
+		width: 100vw;
+		height: 100vh;
+		border-radius: 0;
+		min-width: auto;
+		max-width: none;
+	}
+	#button {
+		width: 150px;
+		font-size: 1rem;
+		padding: 15px 0px;
+	}
+	h1 {
+		width: 300px;
+		font-size: 1rem;
+	}
+	body {
+		background-image: url(./assets/percentage.jpg);
+		background-size: cover;
+		width: 100vw;
+		height: 100vh;
+		padding: 50px 0px;
+	}
 }

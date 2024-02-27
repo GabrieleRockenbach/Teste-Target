@@ -1,95 +1,95 @@
 :root {
-    --font: #fff;
-    --highlight: #dbcdbfaf;
-    --background-text-color: #a78f5f;
+	--font: #fff;
+	--highlight: #dbcdbfaf;
+	--background-text-color: #a78f5f;
 }
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: "Roboto" , sans-serif;
-    font-weight: 700;
-    color: var(--font);
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	color: var(--font);
 }
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 100px;
-    height: 100vh;
-    background-image: url(/assets/noise.svg);
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 100px;
+	height: 100vh;
+	background-image: url(/assets/noise.svg);
 }
-img{
-    height: 700px;
-    width: 500px;
-    border-radius: 12px 0 0 12px;
+img {
+	height: 700px;
+	width: 500px;
+	border-radius: 12px 0 0 12px;
 }
-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color:var(--highlight);
-    height: 700px;
-    min-width: 500px;
-    max-width: 500px;
-    padding: 50px;
-    text-align: center;
-    border-radius: 0 12px 12px 0;
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--highlight);
+	height: 700px;
+	min-width: 500px;
+	max-width: 500px;
+	padding: 50px;
+	text-align: center;
+	border-radius: 0 12px 12px 0;
 }
-form h1{
-    font-size: 1.6rem;
-    background-color: var(--background-text-color);
-    border-radius: 12px;
-    padding: 50px 30px;
-    letter-spacing: 1px;
-
+form h1 {
+	font-size: 1.6rem;
+	background-color: var(--background-text-color);
+	border-radius: 12px;
+	padding: 50px 30px;
+	letter-spacing: 1px;
 }
-#input{
-    border: 1px solid var(--background-text-color);
-    border-radius: 12px;
-    padding: 5px 12px;
-    background-color: var(--font);
-    margin-top: 80px;
-    margin-bottom: 30px;
-    color: var(--background-text-color);
-    outline: none;
+#input {
+	border: 1px solid var(--background-text-color);
+	border-radius: 12px;
+	padding: 5px 12px;
+	background-color: var(--font);
+	margin-top: 80px;
+	margin-bottom: 30px;
+	color: var(--background-text-color);
+	outline: none;
 }
-#button{
-    padding: 10px 35px;
-    border-radius: 12px;
-    border: none;
-    color: var(--font);
-    background-color: var(--background-text-color);
-    letter-spacing: 1px;
-    transition: all 0.5s;
+#button {
+	padding: 10px 35px;
+	border-radius: 12px;
+	border: none;
+	color: var(--font);
+	background-color: var(--background-text-color);
+	letter-spacing: 1px;
+	transition: all 0.5s;
 }
-#button:active{
-    transform: scale(0.9);
+#button:active {
+	transform: scale(0.9);
 }
-#button:focus-visible{
-    outline: orange solid 4px;
-    border: none;
+#button:focus-visible {
+	outline: orange solid 4px;
+	border: none;
 }
 @media screen and (max-width: 1200px) {
-    img{
-        display: none;
-    }
-    form{
-        width: 100vw;
-        height: 100vh;
-        border-radius: 0;
-        min-width: auto;
-        max-width:none;
-    }
-    h1 , input{
-        max-width: 400px;
-    }
-    body{
-        background-image: url(./assets/revert.jpg);
-        background-size: cover;
-        width: 100vw;
-        height: 100vh;
-        padding: 0;
-    }
+	img {
+		display: none;
+	}
+	form {
+		width: 100vw;
+		height: 100vh;
+		border-radius: 0;
+		min-width: auto;
+		max-width: none;
+	}
+	h1,
+	input {
+		max-width: 400px;
+	}
+	body {
+		background-image: url(./assets/revert.jpg);
+		background-size: cover;
+		width: 100vw;
+		height: 100vh;
+		padding: 0;
+	}
 }
