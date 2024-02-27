@@ -27,6 +27,11 @@ const cardContent = [
     }
 ]
 
+function scrollToSection(section) {
+    const targetSection = document.getElementById(section);
+    targetSection.scrollIntoView({ behavior: 'smooth' });
+  }
+
 function showCards(){
  
     cardContent.forEach(element => {

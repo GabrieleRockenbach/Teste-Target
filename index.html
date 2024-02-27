@@ -6,27 +6,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <script src="./main.js" defer></script>
     <title>Teste de Código</title>
 </head>
 <body>
-    <section class="introduction-container">
+    <section id="introduction-container">
         <div class="text">
             <h1>Olá, avaliador(a)!<br/> Meu nome é <span>Gabriele Rockenbach</span>.</h1>
             <h2>Este é o meu retorno para o desafio de código proposto.
                 <br/>
                 Espero que o trabalho que realizei atenda às expectativas da vaga!
             </h2>
-            <a href="#links"><button id="introduction-button">Avaliar resultados</button></a>
+            <button id="introduction-button" onclick="scrollToSection('links')">Avaliar resultados</button>
         </div>
-        <img src="/assets/avatar.jpg" class="avatar-image" alt="Desenho de uma garota loira, de olhos verdes e acenando">
+        <img src="./assets/avatar.jpg" class="avatar-image" alt="Desenho de uma garota loira, de olhos verdes e acenando">
     </section>
-    <section class="links" id="links">
+    <section id="links">
             <h2>Clique nas opções para avaliar as soluções desenvolvidas</h2>
             <div  id="cards-container">
             </div>
+            <button id="to-top-button" onclick="scrollToSection('introduction-container')">
+                <span class="material-symbols-outlined">
+                arrow_upward
+                </span>
+            </button>
     </section>
 </body>
 </html>
